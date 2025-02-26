@@ -1,0 +1,46 @@
+# Maven / Gradle dependencies
+target/
+build/
+*.war
+*.jar
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# VS Code files
+.vscode/
+
+# Logs and temp files
+*.log
+logs/
+hs_err_pid*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Application properties (if sensitive)
+application.properties
+application.yml
+.env
+
+# Test reports and coverage
+surefire-reports/
+test-output/
+coverage/
+jacoco.exec
+jacoco/
+
+# Docker
+.docker/
+
+# Swagger generated files
+swagger-ui/
