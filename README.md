@@ -40,7 +40,7 @@ Setup & Installation
 
     1. Clone the Repository
 
-        git clone git clone https://github.com/jerone-as/task.git
+        git clone https://github.com/jerone-as/task.git
 
         cd task
 
@@ -63,7 +63,7 @@ Setup & Installation
         #1h = 3600s and 3600*1000 = 3600000 milliseconds
         
         jwt.expiration.time=3600000 
-        
+
     3. Build & Run Docker Containers
 
         mvn clean package
