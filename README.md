@@ -75,6 +75,12 @@ Setup & Installation
     5. Open API Documentation (Swagger)
 
         http://localhost:8080/swagger-ui/index.html
+    
+    6. Stop Application
+
+        docker container ls
+
+        docker container stop <CONTAINER ID>
 
 API Endpoints
 

@@ -30,10 +30,15 @@ public class UserServiceImp implements UserService {
     @Transactional
     public ResponseBean deleteUser(String email) {
         try {
-            userRepository.findByEmail(email).ifPresent(userRepository::delete);
-            return ResponseBean.builder()
-                    .message(PROPS.Message.deleteSuccess)
-                    .build();
+            Optional<User> optionalUser = userRepository.findByEmail(email);
+            if (optionalUser.isPresent()) {
+                userRepository.delete(optionalUser.get());
+                return ResponseBean.builder()
+                        .message(PROPS.Message.deleteSuccess)
+                        .build();
+            } else {
+                throw new GlobalException.InternalServerError(PROPS.Message.emailNotFound);
+            }
         } catch (Exception e) {
             throw new GlobalException.InternalServerError(e.getMessage());
         }
