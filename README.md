@@ -58,6 +58,12 @@ Setup & Installation
 
         spring.jpa.hibernate.ddl-auto=update
 
+        jwt.secret.key=mySecretKeyForJwtMySecretKeyForJwt
+
+        #1h = 3600s and 3600*1000 = 3600000 milliseconds
+        
+        jwt.expiration.time=3600000 
+        
     3. Build & Run Docker Containers
 
         mvn clean package
