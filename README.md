@@ -74,7 +74,7 @@ Setup & Installation
 
     5. Open API Documentation (Swagger)
 
-        http://localhost:8080/swagger-ui.html
+        http://localhost:8080/swagger-ui/index.html
 
 API Endpoints
 
