@@ -27,11 +27,6 @@ hs_err_pid*
 .DS_Store
 Thumbs.db
 
-# Application properties (if sensitive)
-application.properties
-application.yml
-.env
-
 # Test reports and coverage
 surefire-reports/
 test-output/

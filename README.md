@@ -44,7 +44,7 @@ Setup & Installation
 
         cd task
 
-    2. Configure Database in application.properties(Create application.properties file in task/src/main/resources/ directory)
+    2. Configure Database and Security in application.properties
 
         spring.datasource.url=jdbc:mysql://{hostname}:3306/spring_task
 
